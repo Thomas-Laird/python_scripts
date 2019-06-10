@@ -1,0 +1,6 @@
+{
+  "tests/Test_suite.py": true,
+  "tests/test_suite.py::Test_class::test_password": true,
+  "tests/test_suite.py::test_ehlo": true,
+  "tests/test_suite.py::test_needsfiles": true
+}
