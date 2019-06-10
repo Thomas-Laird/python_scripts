@@ -2,12 +2,15 @@ import smtplib
 import getpass
 
 
+email = input("Input email to use for test: ")
+password = getpass.getpass()
+
 client = smtplib.SMTP('smtp.gmail.com')
 client.starttls()
 
-client.login('tomlaird1@gmail.com', 'pfjswjiqpqfifhxs')
+client.login(email, password)
 
-res = client.sendmail('tomlaird1@gmail.com', 'tomlaird1@gmail.com', 'Subject: Python test.\nIt worked yet again!')
+res = client.sendmail(email, email, 'Subject: Python test.\nThis email was sent using python!')
 print(res)
 client.quit()
 
